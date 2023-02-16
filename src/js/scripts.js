@@ -9,7 +9,7 @@ const hideMobileKeyboardOnReturn = (keyboardEvent) => {
     });
 };
 
-document.querySelectorAll('[type=search]').forEach((element) => {
+document.querySelector("#input").forEach((element) => {
     hideMobileKeyboardOnReturn(element);
 }); 
 
