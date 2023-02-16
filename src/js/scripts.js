@@ -1,18 +1,12 @@
 const searchInput = document.querySelector("#input");
 const pokemon = document.querySelector("#pokemon");
 // Removes focus after pressing enter on mobile keyboard
-const hideMobileKeyboardOnReturn = (element) => {
-    element.addEventListener('keyup', (keyboardEvent) => {
-        if (keyboardEvent.code === 'Enter') {
-            element.blur();
-        }
-    });
-};
 
-document.querySelectorAll('[type=search]').forEach((element) => {
-    hideMobileKeyboardOnReturn(element);
+searchInput.addEventListener('keyup', function (event) {
+    if (event.keyCode === 13 || event.code === 'Enter') {
+        searchInput.blur();
+    }
 });
-
 
 //Triggers "Search" button press if "Enter" key is pressed
 document.querySelector("#input").addEventListener("keydown", (e) => {
