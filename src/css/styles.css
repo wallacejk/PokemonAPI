@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruluko&display=swap');
+
+:root {
+    --lightcolor: #0d0dff;
+    --brightcolor: #54c763;
+    --altdarkcolor: #393939;
+    --altlightcolor: #FFDE00;
+    --maintextcolor: #8dd647;
+    --backgroundcolor: #FF0000;
+    --mainbackgroundcolor: #CC0000;
+    --screenbackground: #13541c;
+    --screenordernumber: #092e0e;
+    --information: #393939;
+    --footertext: #FFFFFF;
+}
+
+a:link {
+    color: var(--altlightcolor);
+}
+
+a:visited {
+    color: var(--altlightcolor);
+}
+
+a:hover {
+    color: var(--altdarkcolor);
+}
+
+a:active {
+    color: var(--brightcolor);
+}
+
+body {
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    text-align: justify;
+    background-color: var(--backgroundcolor);
+    color: var(--maintextcolor);
+}
+
+main {
+    margin: 30px;
+    background-color: var(--mainbackgroundcolor);
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+article {
+    padding: 30px;
+    overflow: hidden;
+}
+
+h1 {
+    color: var(--altlightcolor);
+    font-size: 1em;
+    text-align: left;
+    padding: 0px;
+}
+
+h2 {
+    color: var(--altdarkcolor);
+    font-size: 1.5em;
+    text-align: left;
+    padding: 10px 0px 5px 0px;
+}
+
+
+#information {
+    padding: 10px;
+    background-color: var(--information);
+}
+
+ul {
+    width: 100%;
+    padding: 10px;
+    list-style: none;
+    background-color: var(--screenbackground);
+    position: relative;
+    box-shadow: 0px 0px 5px #000000;
+}
+
+li {
+    padding: 1%;
+    position: relative;
+}
+
+#ordernumber {
+    font-size: 5rem;
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    color: var(--screenordernumber);
+}
+
+input {
+    margin: 0px;
+}
+
+#input {
+    margin: 0px 10px 10px 0px;
+    width: 100%;
+    padding: 5px;
+    background-color: var(--altdarkcolor);
+    color: var(--maintextcolor);
+}
+
+button {
+    background-color: var(--lightcolor);
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    border-style: solid;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+button:hover {
+    background-color: #0909ae;
+}
+
+button:active {
+    background-color: #3e8e41;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: var(--footertext);
+}
+
+form {
+    padding: 10px 0px 0px 0px;
+}
